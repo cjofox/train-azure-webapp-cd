@@ -32,7 +32,7 @@ namespace train_azure_webapp_cd
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    await context.Response.WriteAsync("Hello World! Now setup with CD. On github checkin, this deploys to Azure.");
                 });
             });
         }
